@@ -6,4 +6,5 @@ def quick_sort(data):
 		lesser = [i for i in data if i <= data[pivot]]  # Get list of all numbers lesser than or equal to the pivot
 		greater = [i for i in data if i > data[pivot]]  # Get list of all numbers greater than the pivot
 		return quick_sort(lesser) + [pivot] + quick_sort(greater)  # Recursively get sorted list
+	return data
 
